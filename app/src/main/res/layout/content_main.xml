@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sfs.studentfeedbacksystem.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/appbackground">
+
+    <Button
+        android:id="@+id/speak_louder"
+        android:layout_width="172dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:text="Speak Louder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speak_slower"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:background="@drawable/mainbuttons"
+        android:fontFamily="monospace"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/speak_slower"
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:text="Speak Slower"
+        app:layout_constraintBaseline_toBaselineOf="@+id/speak_faster"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:background="@drawable/buttonshape"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/speak_faster"
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="34dp"
+        android:text="Speak Faster"
+        app:layout_constraintLeft_toLeftOf="@+id/thumbs_down"
+        app:layout_constraintRight_toRightOf="@+id/thumbs_down"
+        app:layout_constraintTop_toBottomOf="@+id/thumbs_down"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/thumbs_down"
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Thumbs Down"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:background="@drawable/buttonshape"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/thumbs_up"
+        android:layout_width="169dp"
+        android:layout_height="152dp"
+        android:text="Thumbs Up"
+        app:layout_constraintBottom_toBottomOf="@+id/thumbs_down"
+        app:layout_constraintLeft_toLeftOf="@+id/speak_slower"
+        app:layout_constraintRight_toRightOf="@+id/speak_slower"
+        app:layout_constraintTop_toTopOf="@+id/thumbs_down"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/buttonshape"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+</android.support.constraint.ConstraintLayout>
