@@ -19,15 +19,4 @@
         android:width="3dp"
         android:color="#FFFFFF"
         />
-    <item
-        android:state_focused="true"
-        android:state_pressed="true"
-        android:drawable="@drawable/bgalt" />
-
-    <item
-        android:state_focused="false"
-        android:state_pressed="true"
-        android:drawable="@drawable/bgalt" />
-
-    <item android:drawable="@drawable/bgnorm" />
 </shape>
